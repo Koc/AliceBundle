@@ -20,6 +20,12 @@
                  class="Hautelook\AliceBundle\Faker\Provider\ProviderChain"
                  lazy="true" />
 
+        <service id="hautelook_alice.faker.provider_uploaded_file"
+                 class="Hautelook\AliceBundle\Faker\Provider\UploadedFileProvider"
+        >
+            <tag name="hautelook_alice.faker.provider" />
+        </service>
+
         <service id="hautelook_alice.doctrine.executor.fixtures_executor"
                  class="Hautelook\AliceBundle\Doctrine\DataFixtures\Executor\FixturesExecutor"
                  lazy="true" />
